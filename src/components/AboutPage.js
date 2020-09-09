@@ -1,9 +1,10 @@
 import React from 'react';
 
+
 function AboutPage() {
 
     return (
-<p>AboutPage Works</p>
+<div>AboutPage</div>
     );
 }
 export default AboutPage;
