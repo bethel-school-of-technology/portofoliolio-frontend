@@ -1,21 +1,18 @@
-import React from 'react';
-import { Jumbotron, Container,Row,Col } from 'react-bootstrap';
+import React from "react";
+import { Jumbotron, Container, Row, Col } from "react-bootstrap";
 
-
-function Hope (props){
-return(
-<Jumbotron>
-    <Container>
+function Hope(props) {
+  return (
+    <Jumbotron>
+      <Container>
         <Row>
-            <Col>
-            {props.title && <h1>{props.title} </h1> }
-            {props.subTitle && <h1>{props.subTitle} </h1> }
-
-            </Col>
+          <Col>
+            {props.title && <h1>{props.title} </h1>}
+            {props.subTitle && <h1>{props.subTitle} </h1>}
+          </Col>
         </Row>
-    </Container>
-</Jumbotron>
-);
-
+      </Container>
+    </Jumbotron>
+  );
 }
 export default Hope;
