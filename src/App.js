@@ -15,6 +15,8 @@ import Login from "./components/login.component";
 import SignUp from "./components/signup.component";
 // import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import Switch from "react-bootstrap/esm/Switch";
+import "./components/Tech.png";
+
 // import "./components/login.component.css";
 class App extends React.Component {
   constructor(props) {
@@ -66,6 +68,7 @@ class App extends React.Component {
             </div>
           </div>
         </div>
+
         <Container className="p-0" fluid={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Toggle className="border-0" aria-controls="navar-toggle" />
