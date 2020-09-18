@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-// import "./App.css";
+import "./App.css";
 // import NavbarBrand from "react-bootstrap/NavbarBrand";
-import Footer from "./components/Footer";
+import "./components/Header";
 import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
@@ -15,6 +15,9 @@ import Login from "./components/login.component";
 import SignUp from "./components/signup.component";
 // import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import Switch from "react-bootstrap/esm/Switch";
+import "./components/Tech.png";
+import Header from "./components/Header";
+
 // import "./components/login.component.css";
 class App extends React.Component {
   constructor(props) {
@@ -24,9 +27,9 @@ class App extends React.Component {
       headerLinks: [
         { title: "Login", path: "/log-in" },
         { title: "SignUp", path: "/sugn-up" },
-        // { title: "About", path: "/about" },
-        // { title: "Contact", path: "/contact" },
-        // { title: "SignUp", path: "/sign-up" },
+        { title: "About", path: "/about" },
+        { title: "Contact", path: "/contact" },
+        { title: "SignUp", path: "/sign-up" },
       ],
 
       home: {
@@ -47,27 +50,30 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <div className="App">
-          <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-            <div className="container">
-              <div
-                className="collapse navbar-collapse"
-                id="navbarTogglerDemo02"
-              ></div>
-            </div>
-          </nav>
+        <div class="header">
+          <div className="App">
+            <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+              <div className="container">
+                <div
+                  className="collapse navbar-collapse"
+                  id="navbarTogglerDemo02"
+                ></div>
+              </div>
+            </nav>
 
-          <div className="auth-wrapper">
-            <div className="auth-inner">
-              <Switch>
-                <Route path="/sign-in" component={Login} />
-                <Route path="/sign-up" component={SignUp} />
-              </Switch>
+            <div className="auth-wrapper">
+              <div className="auth-inner">
+                <Switch>
+                  <Route path="/sign-in" component={Login} />
+                  <Route path="/sign-up" component={SignUp} />
+                </Switch>
+              </div>
             </div>
           </div>
         </div>
+
         <Container className="p-0" fluid={true}>
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
+          <Navbar className="border-buttom" bg="transparent" expand="lg">
             <Navbar.Toggle className="border-0" aria-controls="navar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
@@ -88,7 +94,6 @@ class App extends React.Component {
                             Sign up
                           </Link>
                         </li>
-
                         <li>
                           <Link className="nav-link" to="/">
                             Home
@@ -125,7 +130,6 @@ class App extends React.Component {
             path="/contact"
             render={() => <ContactPage title={this.state.contact.title} />}
           />
-          <Footer />
         </Container>
       </Router>
     );

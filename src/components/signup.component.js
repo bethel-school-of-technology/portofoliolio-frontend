@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-// import "./signup.component.css";
+import "./signup.component.css";
 
 export default class SignUp extends Component {
   render() {
     return (
-      <form>
+      <form id="sighup">
         <h3>Sign Up</h3>
 
         <div className="form-group">

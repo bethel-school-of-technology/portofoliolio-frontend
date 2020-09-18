@@ -3,6 +3,9 @@
 * {
   box-sizing: border-box;
 }
+.footer {
+  padding-top: 0%;
+}
 body {
   background: lightgray !important;
   min-height: 100vh;
