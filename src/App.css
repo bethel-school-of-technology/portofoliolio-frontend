@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: #282c34;
+  color: white;
+  padding: 40px;
+  font-family: Arial;
+  text-align: center;
+}
+body {
+  background-color:yellowgreen;
+  text-align: center;
+}
+home-logo {
+  homelogo-color: blue
+  text-align: center;
+}
+about-logo {
+  aboutlogo-color: blue
+  text-align: center;
+}
+contact-logo {
+  contactlogo-color: blue
+  text-align: center;
+}

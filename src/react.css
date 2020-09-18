@@ -1,0 +1,14 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class MyHeader extends React.Component {
+  render() {
+    return (
+      <div>
+      <h1 style={{backgroundColor: "lightblue"}}>Our Portfolios</h1>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<MyHeader />, document.getElementById('root'));
