@@ -12,16 +12,13 @@ import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import NavbarBrand from "react-bootstrap/NavbarBrand";
-import Footer from "./components/Footer";
-import Stylesheets from "../components/Stylesheets";
+
 
 import Login from "./components/login.component";
 import SignUp from "./components/signup.component";
 // import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import Switch from "react-bootstrap/esm/Switch";
 import "./components/Tech.png";
-import Header from "./components/Header";
 
 // import "./components/login.component.css";
 class App extends React.Component {
@@ -136,6 +133,7 @@ class App extends React.Component {
             render={() => <ContactPage title={this.state.contact.title} />}
           />
         </Container>
+        <Users uri="http://localhost:3001/staticUsers" />
       </Router>
     );
   }
