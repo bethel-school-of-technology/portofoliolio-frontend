@@ -5,13 +5,13 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import "./App.css";
 import Users from './components/Users';
+
 // import NavbarBrand from "react-bootstrap/NavbarBrand";
 import "./components/Header";
 import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
 
 
 import Login from "./components/login.component";
@@ -19,6 +19,7 @@ import SignUp from "./components/signup.component";
 // import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import Switch from "react-bootstrap/esm/Switch";
 import "./components/Tech.png";
+
 
 // import "./components/login.component.css";
 class App extends React.Component {
