@@ -29,7 +29,7 @@ constructor (props){
    },
    about:{
     title: "About",
-    subtitle: " About Me "
+    subtitle: " About the Coders "
    },
    contact:{
      title:"Connect at my page"
